@@ -1,0 +1,859 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fc;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    padding: 15px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo a {
+    font-size: 28px;
+    font-weight: bold;
+    color: #5b4bdb;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #5b4bdb;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #eeedff,
+        #f7f8fc,
+        #e8e6ff
+    );
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-tagline {
+    color: #5b4bdb;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #5b4bdb;
+}
+
+.hero-description {
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    color: #666;
+    font-size: 18px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    background-color: #5b4bdb;
+    color: white;
+
+    padding: 14px 30px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #4635c2;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   LANGUAGE SECTION
+========================= */
+
+.languages-section {
+    padding: 80px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-tag {
+    color: #5b4bdb;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.section-heading h2,
+.about-content h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: #666;
+}
+
+
+/* =========================
+   LANGUAGE CARDS
+========================= */
+
+.language-cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.language-card {
+    background-color: white;
+
+    padding: 30px 25px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    border: 1px solid #eeeeee;
+
+    transition: 0.3s;
+}
+
+.language-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 30px rgba(
+        91,
+        75,
+        219,
+        0.12
+    );
+}
+
+.language-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 20px;
+
+    border-radius: 12px;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.python-icon {
+    background-color: #e8f3ff;
+    color: #3776ab;
+}
+
+.c-icon {
+    background-color: #e5efff;
+    color: #00599c;
+}
+
+.cpp-icon {
+    background-color: #e8e8ff;
+    color: #004482;
+}
+
+.java-icon {
+    background-color: #fff0e8;
+    color: #e76f00;
+}
+
+.language-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.language-card p {
+    font-size: 14px;
+    color: #666;
+
+    min-height: 90px;
+
+    margin-bottom: 20px;
+}
+
+.card-button {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background-color: #5b4bdb;
+    color: white;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.card-button:hover {
+    background-color: #4635c2;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+    padding: 80px 8%;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about-content p:last-child {
+    color: #666;
+    font-size: 16px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 25px 20px;
+
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   LEARNING PAGE
+========================= */
+
+.learning-container {
+    display: flex;
+
+    min-height: calc(100vh - 70px);
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 260px;
+
+    padding: 25px 20px;
+
+    background-color: white;
+
+    border-right: 1px solid #eeeeee;
+
+    position: sticky;
+    top: 70px;
+
+    height: calc(100vh - 70px);
+
+    overflow-y: auto;
+
+    flex-shrink: 0;
+}
+
+.sidebar h3 {
+    color: #5b4bdb;
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+.topic-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.topic-button {
+    width: 100%;
+
+    padding: 12px 15px;
+
+    border: none;
+
+    background-color: transparent;
+
+    text-align: left;
+
+    font-size: 15px;
+
+    color: #444;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.topic-button:hover {
+    background-color: #f0efff;
+    color: #5b4bdb;
+}
+
+.topic-button.active {
+    background-color: #5b4bdb;
+    color: white;
+}
+
+
+/* =========================
+   LESSON CONTENT
+========================= */
+
+.lesson-content {
+    flex: 1;
+
+    padding: 40px;
+
+    min-width: 0;
+}
+
+.lesson-header {
+    margin-bottom: 30px;
+}
+
+.lesson-header h1 {
+    font-size: 34px;
+
+    margin-bottom: 12px;
+}
+
+.lesson-header p {
+    color: #666;
+}
+
+
+/* =========================
+   LESSON CARDS
+========================= */
+
+.lesson-card {
+    background-color: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+
+    border: 1px solid #eeeeee;
+}
+
+.lesson-card h2 {
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+    color: #333;
+}
+
+.lesson-card p {
+    color: #555;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   MOVIE EXAMPLE
+========================= */
+
+.movie-example {
+    background-color: #fff8e8;
+
+    padding: 20px;
+
+    border-left: 5px solid #f0b429;
+
+    border-radius: 8px;
+
+    margin-bottom: 25px;
+}
+
+.movie-example h3 {
+    color: #8a5a00;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   CODE BLOCK
+========================= */
+
+.code-block {
+    background-color: #1e1e2f;
+
+    color: #f1f1f1;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    overflow-x: auto;
+
+    margin: 15px 0;
+}
+
+.code-block pre {
+    font-family: Consolas, monospace;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    white-space: pre;
+}
+
+
+/* =========================
+   OUTPUT BLOCK
+========================= */
+
+.output-block {
+    background-color: #f0fdf4;
+
+    color: #166534;
+
+    padding: 18px;
+
+    border-radius: 8px;
+
+    border: 1px solid #bbf7d0;
+
+    margin-top: 15px;
+}
+
+.output-block h3 {
+    margin-bottom: 10px;
+}
+
+.output-block pre {
+    font-family: Consolas, monospace;
+
+    white-space: pre-wrap;
+}
+
+
+/* =========================
+   EXPLANATION
+========================= */
+
+.explanation-list {
+    padding-left: 25px;
+
+    color: #555;
+}
+
+.explanation-list li {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   QUIZ SECTION
+========================= */
+
+.quiz-section {
+    background-color: white;
+
+    padding: 25px;
+
+    margin-top: 30px;
+
+    border-radius: 12px;
+
+    border: 1px solid #eeeeee;
+}
+
+.quiz-section h2 {
+    margin-bottom: 20px;
+}
+
+.quiz-question {
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    background-color: #f8f8ff;
+
+    border-radius: 10px;
+}
+
+.quiz-question h3 {
+    font-size: 17px;
+
+    margin-bottom: 15px;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.quiz-option {
+    padding: 12px 15px;
+
+    border: 1px solid #dddddd;
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition: 0.2s;
+}
+
+.quiz-option:hover {
+    border-color: #5b4bdb;
+
+    background-color: #f0efff;
+}
+
+.quiz-option.correct {
+    background-color: #dcfce7;
+
+    border-color: #22c55e;
+
+    color: #166534;
+}
+
+.quiz-option.wrong {
+    background-color: #fee2e2;
+
+    border-color: #ef4444;
+
+    color: #991b1b;
+}
+
+.quiz-feedback {
+    margin-top: 12px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1000px) {
+
+    .language-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lesson-content {
+        padding: 25px;
+    }
+
+    .sidebar {
+        width: 220px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .logo a {
+        font-size: 23px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .languages-section {
+        padding: 60px 5%;
+    }
+
+    .language-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .learning-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+
+        height: auto;
+
+        position: relative;
+
+        top: 0;
+
+        border-right: none;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .topic-list {
+        flex-direction: row;
+
+        overflow-x: auto;
+
+        padding-bottom: 10px;
+    }
+
+    .topic-button {
+        white-space: nowrap;
+
+        width: auto;
+    }
+
+    .lesson-content {
+        padding: 20px;
+    }
+
+    .lesson-header h1 {
+        font-size: 28px;
+    }
+
+}
+/* Lesson formatting */
+#lessonContent {
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    line-height: 1.7;
+}
+
+#lessonContent h2 {
+    color: #5b4bdb;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#lessonContent h3 {
+    color: #333;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#lessonContent p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Code formatting */
+#lessonContent pre {
+    background: #1e1e2e;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-size: 15px;
+}
+
+/* Quiz formatting */
+.quiz-box {
+    background: #f7f8fc;
+    border: 1px solid #e0e0ef;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+}
+
+.quiz-question {
+    margin-bottom: 25px;
+}
+
+.quiz-question p {
+    font-weight: bold;
+    color: #222;
+}
+
+.quiz-option {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #d6d6e5;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.quiz-option:hover:not(:disabled) {
+    background: #eeeaff;
+    border-color: #5b4bdb;
+}
+
+.quiz-option:disabled {
+    cursor: not-allowed;
+    opacity: 0.9;
+}
+
+.quiz-option.correct {
+    background: #d8f5df;
+    border-color: #2e9d50;
+    color: #176b2d;
+}
+
+.quiz-option.wrong {
+    background: #ffe0e0;
+    border-color: #e04444;
+    color: #a52222;
+}
+
+.quiz-feedback {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.quiz-feedback.correct-feedback {
+    background: #d8f5df;
+    color: #176b2d;
+}
+
+.quiz-feedback.wrong-feedback {
+    background: #ffe0e0;
+    color: #a52222;
+}
